@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanmay's Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="css/pagepiling.css" />
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+  </head>
+  <body>
+    <!-- Pixel-Layer -->
+    <div id="pixelLayer"></div>
+
+    <!-- Preloader -->
+    <div id="preloader"><img src="media/logo.png" alt="Logo" /></div>
+
+    <!-- Links -->
+    <div id="links">
+      <ul>
+        <li>
+          <a href="https://github.com/tanmayadmuthe" target="_blank"
+            ><i class="bx bxl-github SlideUp"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:tanmayadmuthe32@gmail.com"
+            ><i class="bx bxs-envelope SlideUp"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Fullscreen Menu -->
+    <div id="smartphone-menu" class="SlideUp">
+      <ul class="menu">
+        <li style="animation-delay: 0.3s" class="SlideUp">
+          <a class="active" data-menuanchor="1" href="#1">HOME</a>
+        </li>
+        <li style="animation-delay: 0.5s" class="SlideUp">
+          <a data-menuanchor="2" href="#2">PROJECTS</a>
+        </li>
+        <li style="animation-delay: 0.8s" class="SlideUp">
+          <a data-menuanchor="3" href="#3">ABOUT</a>
+        </li>
+      </ul>
+      <div class="links">
+        <a href="https://github.com/tanmayadmuthe">GITHUB</a>
+        <a href="mailto:tanmayadmuthe32@gmail.com">EMAIL</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div id="header" class="SlideUp">
+      <img src="media/logo.png" alt="Logo" />
+      <div class="menu-icon">
+        <input
+          id="menu-icon__checkbox"
+          type="checkbox"
+          onclick="toggleMenu();"
+        />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="desktop-menu">
+        <ul class="menu">
+          <li><a data-menuanchor="1" class="active" href="#1">Home</a></li>
+          <li><a data-menuanchor="2" href="#2">Projects</a></li>
+          <li><a data-menuanchor="3" href="#3">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PagePiling -->
+    <div id="pagepiling">
+      <!-- Cursor -->
+      <div id="cursor"></div>
+
+      <!-- Home -->
+      <div id="home" class="section">
+        <div class="msg">
+          <h2 class="SlideUp">HEY, I'M</h2>
+          <h1 class="SlideUp">Tanmay</h1>
+          <p class="SlideUp">Developer / Designer / Gamer</p>
+          <div id="scrolldown">
+            <a href="#2"><i class="bx bxs-chevron-down SlideUp"></i></a>
+          </div>
+        </div>
+        <div class="circle"></div>
+        <div data-relative-input="true" id="blobscene" class="SlideUp">
+          <img data-depth="0.2" src="media/objects/blop1.webp" alt="Blop 1" />
+          <img data-depth="0.3" src="media/objects/blop3.webp" alt="Blop 3" />
+          <img data-depth="0.4" src="media/objects/blop2.webp" alt="Blop 2" />
+        </div>
+        <div data-relative-input="true" class="SlideUp" id="bgscene1">
+          <img
+            data-depth="0.1"
+            src="media/objects/object1.webp"
+            alt="Object 1"
+          />
+        </div>
+        <div data-relative-input="true" class="SlideUp" id="bgscene2">
+          <img
+            data-depth="0.1"
+            src="media/objects/object3.webp"
+            alt="Object 3"
+          />
+        </div>
+        <div data-relative-input="true" class="SlideUp" id="bgscene3">
+          <img
+            data-depth="0.1"
+            src="media/objects/object4.webp"
+            alt="Object 4"
+          />
+        </div>
+        <div data-relative-input="true" class="SlideUp" id="bgscene4">
+          <img
+            data-depth="0.1"
+            src="media/objects/object2.webp"
+            alt="Object 2"
+          />
+        </div>
+        <div class="background-text" text="Home"></div>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects" class="section">
+        <div class="background-text" text="PROJECTS"></div>
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project SlideUp">
+            <img src="media/project1.png" alt="Project 1" />
+            <div class="project-overlay">
+              <div class="project-slider">
+                <a
+                  href="https://github.com/tanmayadmuthe/DreamScape"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-name">DreamScape</div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project SlideUp">
+            <img src="media/project2.png" alt="Project 2" />
+            <div class="project-overlay">
+              <div class="project-slider">
+                <a
+                  href="https://github.com/tanmayadmuthe/virtubell"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-name">Virtubell</div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project SlideUp">
+            <img src="media/project4.png" alt="Project 2" />
+            <div class="project-overlay">
+              <div class="project-slider">
+                <a
+                  href="https://github.com/tanmayadmuthe/Avian-Responses-to-Climate-Change"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-name"></div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project SlideUp">
+            <img src="media/project3.png" alt="Project 3" />
+            <div class="project-overlay">
+              <div class="project-slider">
+                <a
+                  href="https://github.com/tanmayadmuthe/chess_like_game"
+                  target="_blank"
+                  >View Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-name">Chess-Like Game</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about" class="section">
+        <!-- Education and Experience Timeline -->
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-entry left-entry SlideUp">
+            <h3>Education</h3>
+            <p>
+              Vellore Institute of Technology, Chennai Electronics and Computer
+              Engineering
+            </p>
+            <p>2021-2025</p>
+            <p>Current CGPA: 8.58</p>
+          </div>
+          <div class="timeline-entry right-entry SlideUp">
+            <h3>Experience</h3>
+            <p>PRISM Research Intern - Samsung R and D Institute, Bangalore</p>
+            <p>Oct 2023 - Aug 2024</p>
+          </div>
+          <div class="timeline-entry left-entry SlideUp">
+            <h3>Education</h3>
+            <p>Sanjay Ghodawat Junior College - Atigre</p>
+            <p>2019-2021</p>
+            <p>12th percentage 93.67%</p>
+          </div>
+          <div class="timeline-entry right-entry SlideUp">
+            <h3>Experience</h3>
+            <p>Research Intern - Vellore Institute of Technology, Chennai</p>
+            <p>May 2024 - July 2024</p>
+          </div>
+          <div class="timeline-entry left-entry SlideUp">
+            <h3>Education</h3>
+            <p>Jawahar Navodaya Vidyalaya, Palus</p>
+            <p>2014-2019</p>
+            <p>10th percentage 93.6%</p>
+          </div>
+        </div>
+        <div class="background-text" text="ABOUT"></div>
+      </div>
+    </div>
+    <!-- End of PagePiling -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/misc.js"></script>
+    <script>
+      startup();
+    </script>
+  </body>
+</html>
