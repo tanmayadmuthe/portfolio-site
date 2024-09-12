@@ -9,6 +9,17 @@
   --text-col: #cdd6f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.section {
+  min-height: 100vh; /* Ensure each section occupies at least the full viewport height */
+  padding: 40px 0; /* Add padding if needed */
+  display: flex;
+  align-items: center; /* Center content vertically if desired */
+  justify-content: center; /* Center content horizontally if desired */
+}
+
 /* GLOBAL PROPERTIES */
 * {
   font-family: poppins;
